@@ -2,9 +2,8 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <meta charset="utf-8">
   <title>Personal Website</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -23,18 +22,24 @@
   <section id="home">
     <!--navigation------------------------->
     <nav>
-      <!--logo-->
-      <div>
-        <img src="images/stacktrek-logo.png" style="width: 20%; height: auto;" alt="Stacktrek-logo">
-      </div>
       <!--menu-->
       <ul>
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
       </ul>
-      <!--bars--------------->
-      <div class="toggle"></div>
+
+      <div class="hamburger">
+        <span class="bar"> </span>
+        <span class="bar"> </span>
+        <span class="bar"> </span>
+      </div>
+
+      <!--logo-->
+      <div class="logo">
+        <img src="images/stacktrek-logo.png" style="width: 20%; height: auto;" alt="Stacktrek-logo">
+      </div>
 
     </nav>
     <!--text----------------------->
@@ -42,37 +47,37 @@
       <p>Hello,</p>
       <p>I&#8217;M Rene</p>
       <p>Stacktrek Trainee <br>Software & Web Devoloper</p>
-      <button class="hire-btn">About me</button>
+      <button class="hire-btn">My experience</button>
       <button class="down-cv">Download CV</button>
     </div>
     <!--model---------------------->
-    <img class="model" src="images/me.png" style="width: 50%; height: auto;" alt="model">
+    <img class="model" src="images/me.png" alt="model">
 
 
   </section>
 
 
   <div id="about" class="about-container">
-    <!--about-me-text-->
+    <!--about-me-text-->  
+
     <div class="about-text">
       <p>About Me</p>
-      <p>Devolper & Designer</p>
-      <p>Hello,My name is Rene Calaor. I am a Devolper and also a Designer.If you have asany Project or if you want make
-        a software for your bisnes conatact me.I make as soon as possibale.You really like my work,if you don&#8217;t i
-        change this until you like I give you seticfaction result.</p>
-      <p>I am a Devolper and also a Designer.If you have asany Project or if you want make a software for your bussniess
-        conatact me.I make your project as soon as possible.</p>
+      <p>Web & Software Developer</p>
+      <p>Hello, My name is Rene Calaor. I am a Developer and love playing online games. </p>
+      <p>Why Online games? It can also provide a way for me to escape from my daily lives and experience something new
+        and exciting. The immersive nature of many online games can transport players to new worlds and give them a
+        sense of adventure and excitement that they may not be able to find in my everyday lives.</p>
       <button>Button</button>
       <button>Personal Info</button>
     </div>
   </div>
 
   <!--services-container---------------------------->
-  <div id="projects" class="services ">
+  <div id="projects" class="services">
     <!--text-->
     <div class="services-text ">
       <p>Projects</p>
-      <p>Second Title</p>
+      <p>CPU</p>
       <p>if you want make a software for your bussniess conatact me.I make as soon as possibale.You really like my work,
         if you don&#8217;t i change this until you like if you want make a software for your bussniess conatact me.I
         make as soon</p>
@@ -82,39 +87,56 @@
       <div class="box-1">
         <span>1</span>
         <p class="heading">Thesis</p>
-        <p class="details">if you want make a software for your bussniess conatact me.I make as soon as possibale.You
-          really like my work, if you don&#8217;t i change this until you like if you want.</p>
+        <p class="details">Central Philippine University Mobile Application Food Ordering System With DESCRIPTIVE ANALYTICS</p>
         <button>Read More</button>
       </div>
       <!--2------------->
       <div class="box-2">
         <span>2</span>
         <p class="heading">Web Devoloment</p>
-        <p class="details">if you want make a software for your bussniess conatact me.I make as soon as possibale.You
-          really like my work, if you don&#8217;t i change this until you like if you want.</p>
+        <p class="details">Fan page <br> Product brochure</p>
         <button>Read More</button>
       </div>
       <!--3------------->
       <div class="box-3">
         <span>3</span>
         <p class="heading">Desktop Development</p>
-        <p class="details">if you want make a software for your bussniess conatact me.I make as soon as possibale.You
-          really like my work, if you don&#8217;t i change this until you like if you want.</p>
+        <p class="details">Hotel Management</p>
         <button>Read More</button>
       </div>
     </div>
   </div>
-  <!--footer--------------->
-  <footer>
-    <!--copyright-->
-    <p class="copyright">Copyright by Goin-To Internet</p>
-  </footer>
+
+  <h1 id="gallery">Gallery</h1>
+    <div class="center">
+        <div class="img-sec active">
+            <img src="img/3.png">
+        </div>
+        
+        <div class="img-sec">
+            <img src="img/2.jpg">
+        </div>
+        
+        <div class="img-sec">
+            <img src="img/1.jpg">
+        </div>
+        
+        <div class="img-sec">
+            <img src="img/4.jpg">
+        </div>
+        
+        <div class="img-sec">
+            <img src="img/5.jpg">
+        </div>
+    </div>
+
+
   <!--social-attach-bar-->
   <div class="social">
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.facebook.com/calaorrene17" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
   </div>
 
 </body>

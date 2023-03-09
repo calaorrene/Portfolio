@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+  width: 0px; 
+}
+
+body {
+  min-height: 100vh;
+}
+
+section {
+  display: flex;
+  padding: 100px;
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggle.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.showcase {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.showcase.active {
+  right: 300px;
+}
+
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.text {
+  position: absolute;
+  z-index: 10;
+}
+
+.text h2 {
+  font-size: 2em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+
+.text h3 {
+  font-size: 5em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.text a:hover {
+  letter-spacing: 6px;
+}
+
+table {
+  margin-top: 50px;
+  color: white;
+
+}
+
+table img{
+  width: 150px;
+}
+
+th {
+  text-align: left;
+  width: 250px;
+}
+
+td {
+  text-align: left;
+}
+
+.social {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  position: absolute;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+
+.menu ul li .drop-down {
+  display: none;
+  position: absolute;
+  background-color: white;
+}
+
+.menu ul li .drop-down li a{
+  font-size: 15px;
+  font-style: bold;
+}
+
+.menu ul li .drop-down li i {
+  padding: 10px;
+  color: black;
+}
+
+.menu ul li:hover ul {
+  display: block;
+}
+
+.menu ul li a:hover {
+  color: goldenrod; 
+}
+
+.content img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.text-wrapper {
+  width: 30%;
+  position: static;
+  margin-top: -25%;
+  margin-left: 65%; 
+  z-index: 10;
+}
+
+.text-wrapper h2{
+  padding-bottom: 20px;
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-wrapper h3{
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+.scroll-btn {
+  animation: bounce .7s;
+  animation-duration: alternate;
+  animation-timing-function: cubic-bezier(.5,.05,1,.5);
+  animation-iteration-count: infinite;
+}
+
+footer {
+  position: sticky;
+}
+
+footer nav {
+  justify-content: space-between;
+  margin-top: 10%;
+  height: 50px;
+  background-color: black;
+  align-items: center;
+  display: flex;
+}
+
+footer .ul-menu li {
+  padding: 10px;
+  display: inline-block;
+  color: #fff;
+}
+
+footer .ul-menu li a {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .nav_contacts li {
+  padding: 0px 20px;
+  list-style: none;
+  display: inline-block;
+}
+
+i {
+  color: #fff;
+}
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+
+  .text-wrapper,
+  .text-wrapper h2
+  {
+    padding-bottom: 1px;
+    font-size: 0.5em;
+  }
+  .text-wrapper h3
+  {
+    font-size: 0.5em;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(2px, 0);
+  }
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+    font-size: 4em;
+    font-family: monospace;
+  }
+  .center {
+    width: 100%;
+    height: 100%;
+    margin: 2% auto 0;
+    margin-bottom: 0;
+    display: flex;
+  }
+  .center:hover .active {
+    flex-basis: 0;
+  }
+  
+  .img-sec {
+    margin: 0 2%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: all 1s;
+  }
+  .img-sec img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+  .img-sec:hover {
+    flex-basis: 50%;
+  }
+  
+  .active {
+    flex-basis: 50%;
+  }
+  
+  .img-sec:nth-child(1):hover {
+    flex-basis: 50%;
+  }
+  
+  .back .fas {
+    margin-top: 10px;
+    margin-left: 30px;
+    float: left;
+    font-size: 50px;
+    color: #111;
+  }
+  
+  footer {
+    position: sticky;
+  }
+  
+  footer nav {
+    justify-content: space-between;
+    margin-top: 10%;
+    height: 50px;
+    background-color: black;
+    align-items: center;
+    display: flex;
+  }
+  
+  footer .ul-menu li {
+    padding: 10px;
+    display: inline-block;
+    color: #fff;
+  }
+  
+  footer .ul-menu li a {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .nav_contacts li {
+    padding: 0px 20px;
+    list-style: none;
+    display: inline-block;
+  }
